@@ -9,7 +9,7 @@ CREATE TABLE Employee (
   EmployeeName VARCHAR(10) NOT NULL ,
   EmployeeSalary INTEGER UNSIGNED NOT NULL ,
   DepartmentName VARCHAR(10) NOT NULL REFERENCES Department,
-  BossNumber SMALLINT UNSIGNED NOT NULL REFERENCES Employee,
+  BossNumber SMALLINT UNSIGNED REFERENCES Employee,
   PRIMARY KEY (EmployeeNumber));
 
 CREATE TABLE Department (
